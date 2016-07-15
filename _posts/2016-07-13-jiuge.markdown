@@ -4,7 +4,7 @@ title:      "九歌里的神奇世界"
 subtitle:   "2000年前被截断的传统"
 date:       2016-07-14 12:00:00
 author:     "xinwuzu"
-header-img: "img/post-bg-re-vs-ng2.jpg"
+header-img: "img/post-bg-jiuge.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
