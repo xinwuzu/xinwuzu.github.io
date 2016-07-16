@@ -202,8 +202,8 @@
 				<p>2015 年 9 月，Apple 重磅发布了全新的 iPhone 6s/6s Plus、iPad Pro 与全新的操作系统 watchOS 2 与 tvOS 9（是的，这货居然是第 9 版），加上已经发布的 iOS 9，它们都为前端世界带来了哪些变化呢？作为一个 web 开发者，是时候站在我们的角度来说一说了！</p>
 
 <blockquote>
-  <p><strong>注！</strong> 该译文存在大量英文术语，笔者将默认读者知晓 ES6、viewport、native app、webview 等常用前端术语，并不对这些已知术语进行汉语翻译<br />
-对于新发布或较新的产品名称与技术术语，诸如 Apple Pen、Split View 等专有名词，笔者将在文中使用其英文名，但会尝试对部分名词进行汉语标注<br />
+  <p><strong>注！</strong> 该译文存在大量英文术语，笔者将默认读者知晓 ES6、viewport、native app、webview 等常用前端术语，并不对这些已知术语进行汉语翻译
+对于新发布或较新的产品名称与技术术语，诸如 Apple Pen、Split View 等专有名词，笔者将在文中使用其英文名，但会尝试对部分名词进行汉语标注
 另外，出于对 wiki 式阅读的偏爱，笔者为您添加了很多额外的链接，方便您查阅文档或出处</p>
 </blockquote>
 
@@ -314,7 +314,7 @@
 
 <p>在这个模式下，无论横屏还是竖屏，所有的 iPad（包括 Pro）都会把你的网站以 320px 的 viewport 宽度进行渲染，就好像在一个大 iPhone 5 上一样。你可以在 CSS 中通过 media query（媒体查询）探测到这个模式：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">/* iPad Air or iPad Mini */</span>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="c">/* iPad Air or iPad Mini */</span>
 <span class="o">(</span><span class="nt">device-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">width</span><span class="o">:</span> <span class="nt">320px</span><span class="o">)</span>
 <span class="c">/* iPad Pro */</span>
 <span class="o">(</span><span class="nt">device-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">width</span><span class="o">:</span> <span class="nt">320px</span><span class="o">)</span>
@@ -356,7 +356,7 @@
 <p>当你需要基于 web 的鉴权，比如 OAuth 时，使用 Safari View Controller 同样是一个好主意，这样就不再需要打开浏览器再重定向回你的应用。不过注意了，Safari View Controller 只适用于在线、公开的 web 内容。如果你的 web 内容假设在本地或者私服，那么 WKWebView 仍然是最推荐的选择。</p>
 
 <blockquote>
-  <p>笔者八卦一下，Safari View Controller 实际上也算是半个社区推进的产物。早在 2014 年 12 月，Tumblr 的 iOS 工程师 Bryan 就发表了一篇著名的 <a href="http://bryan.io/post/104845880796/we-need-a-safari-view-controller">We need a “Safari view controller”</a> 叙述现有 webview 在第三方登录鉴权时的窘境。<br />
+  <p>笔者八卦一下，Safari View Controller 实际上也算是半个社区推进的产物。早在 2014 年 12 月，Tumblr 的 iOS 工程师 Bryan 就发表了一篇著名的 <a href="http://bryan.io/post/104845880796/we-need-a-safari-view-controller">We need a “Safari view controller”</a> 叙述现有 webview 在第三方登录鉴权时的窘境。
 2015 年 6 月，Apple Safari 工程师 Ricky Mondello 的 Twitter 宣告了这个设想的落地：You all asked for it. Come see me introduce it. Introducing Safari View Controller 1:30 PM, Tuesday. Nob Hill.</p>
 </blockquote>
 
@@ -428,7 +428,7 @@
 
 <p>举个例子，我们可以在内嵌模式与 PiP 模式中切换：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nx">video</span><span class="p">.</span><span class="nx">webkitSetPresentationMode</span><span class="p">(</span>
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="nx">video</span><span class="p">.</span><span class="nx">webkitSetPresentationMode</span><span class="p">(</span>
     <span class="nx">video</span><span class="p">.</span><span class="nx">webkitPresentationMode</span> <span class="o">===</span> <span class="s2">"picture-in-picture"</span> <span class="p">?</span>
     <span class="s2">"inline"</span> <span class="p">:</span> 
     <span class="s2">"picture-in-picture"</span>
@@ -444,7 +444,7 @@
 
 <p>iOS 9 上的 Safari 现在支持了来自 Filter Effect v2 spec（滤镜特效第二版规范）的 <strong>backdrop-filter</strong>。比如说，我们可以使用一个半透明的背景并且对其背后的背景使用滤镜：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">header</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">header</span> <span class="p">{</span>
    <span class="nl">background-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">0.4</span><span class="p">);</span>
    <span class="nl">-webkit-backdrop-filter</span><span class="p">:</span> <span class="n">blur</span><span class="p">(</span><span class="m">5px</span><span class="p">);</span>
    <span class="py">backdrop-filter</span><span class="p">:</span> <span class="n">blur</span><span class="p">(</span><span class="m">5px</span><span class="p">);</span>
@@ -460,7 +460,7 @@
 
 <p>来看个例子：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nf">#photo-gallery</span><span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nf">#photo-gallery</span><span class="p">{</span>
     <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
     <span class="nl">overflow-x</span><span class="p">:</span> <span class="nb">scroll</span><span class="p">;</span>
     <span class="nl">-webkit-scroll-snap-points-x</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">100%</span><span class="p">);</span>
@@ -477,7 +477,7 @@
 
 <p>CSS Supports，包括 CSS <code class="highlighter-rouge">@supports</code> 与来自 CSS Conditional Rules Module Level 3 spec 的 JavaScript CSS Supports API 都在 iOS 上迎来降临。现在，我们可以针对某个 CSS 属性的特定值的支持情况来编写代码：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">@supports</span><span class="p">(</span><span class="n">-webkit-scroll-snap-type</span><span class="p">:</span> <span class="n">mandatory</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@supports</span><span class="p">(</span><span class="n">-webkit-scroll-snap-type</span><span class="p">:</span> <span class="n">mandatory</span><span class="p">)</span> <span class="p">{</span>
     <span class="c">/* we use it */</span>
 <span class="p">}</span>
 </code></pre>
@@ -485,7 +485,7 @@
 
 <p>同样，使用 JavaScript：</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">CSS</span><span class="p">.</span><span class="nx">supports</span><span class="p">(</span><span class="s2">"-webkit-scroll-snap-type"</span><span class="p">,</span> <span class="s2">"mandatory"</span><span class="p">))</span> <span class="p">{}</span>
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">CSS</span><span class="p">.</span><span class="nx">supports</span><span class="p">(</span><span class="s2">"-webkit-scroll-snap-type"</span><span class="p">,</span> <span class="s2">"mandatory"</span><span class="p">))</span> <span class="p">{}</span>
 </code></pre>
 </div>
 
@@ -531,7 +531,7 @@
 
 <h3 id="section-5">著作权声明</h3>
 
-<p>本文译自 <a href="http://www.mobilexweb.com/blog/ios9-safari-for-web-developers">iOS 9, Safari and the Web: 3D Touch, new Responsive Web Design, Native integration and HTML5 APIs — Breaking the Mobile Web</a>   <br />
+<p>本文译自 <a href="http://www.mobilexweb.com/blog/ios9-safari-for-web-developers">iOS 9, Safari and the Web: 3D Touch, new Responsive Web Design, Native integration and HTML5 APIs — Breaking the Mobile Web</a> <br />
 译者 <a href="http://weibo.com/huxpro">黄玄</a>，首次发布于 <a href="http://huangxuan.me">Hux Blog</a>，转载请保留以上链接</p>
 
 
@@ -745,7 +745,7 @@
                     
                         <li><a href="http://haoduoshipin.com/">好多视频</a></li>
                     
-                        <li><a href="http://mida.re/">乱序</a></li>
+                        <li><a href="http://huangxuan.me/">黄玄</a></li>
                     
                 </ul>
                 
@@ -927,7 +927,7 @@
 <script>
     // dynamic User by Hux
     var _gaId = 'UA-49627206-1';
-    var _gaDomain = 'huangxuan.me';
+    var _gaDomain = 'xinxuzu.com';
 
     // Originial
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -945,7 +945,7 @@
 
 <script>
     // dynamic User by Hux
-    var _baId = '4cc1f2d8f3067386cc5cdb626a202900';
+    var _baId = '0d6391862691a0d7ae984536237ac97d';
 
     // Originial
     var _hmt = _hmt || [];

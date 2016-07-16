@@ -5,9 +5,9 @@
     <description>关于前端与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
     <link>http://xinwuzu.com/</link>
     <atom:link href="http://xinwuzu.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 14 Jul 2016 21:19:08 +0800</pubDate>
-    <lastBuildDate>Thu, 14 Jul 2016 21:19:08 +0800</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Sat, 16 Jul 2016 08:17:15 +0800</pubDate>
+    <lastBuildDate>Sat, 16 Jul 2016 08:17:15 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>九歌里的神奇世界</title>
@@ -107,20 +107,20 @@
 
 &lt;p&gt;Angular 2 延续了 Angular 1 试图让 HTML 更加强大的老路子。所以即使是像循环或者条件判断这样的简单任务你也不得不使用 Angular 2 的独特语法来完成。例如，Angular 2 通过两种语法同时提供了单向数据绑定与双向数据绑定，可不幸的是它们实在差得有点多：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;myVar&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}}&lt;/span&gt;        //单向数据绑定
+&lt;div class=&quot;language-hbs highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;myVar&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}}&lt;/span&gt;        //单向数据绑定
 ngModel=&quot;myVar&quot;  //双向数据绑定
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;在 React 中，数据绑定语法不取决于数据流的单双向（数据绑定的单双向是在其他地方处理的，不得不说我觉得理应如此）。不管是单向还是双向数据流，绑定语法都是这样的：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;myVar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;myVar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Angular 2 的内联母版（inline master templates）使用了这样的语法：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-hbs highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ngFor=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#hero of heroes&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;hero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}}&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
@@ -138,7 +138,7 @@ ngModel=&quot;myVar&quot;  //双向数据绑定
 
 &lt;p&gt;相比上面 Angular 2 的语法，React 的语法可是纯净的 JavaScript （不过我得承认下面的属性 &lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt; 是个 React 的私货）&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-hbs highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
   { heroes.map(hero =&amp;gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{hero.id}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{hero.name}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
   )}
@@ -170,13 +170,13 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;Angular 2 中的奇怪语法还有点击事件的绑定：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;onSelect(hero)&quot;&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;onSelect(hero)&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;相反，React 再一次使用了普通的 JavaScript：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onSelect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onSelect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -244,7 +244,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;h3 id=&quot;section-7&quot;&gt;著作权声明&lt;/h3&gt;
 
-&lt;p&gt;本文译自 &lt;a href=&quot;https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.v4y4euy1r&quot;&gt;Angular 2 versus React: There Will Be Blood&lt;/a&gt;，其实&lt;a href=&quot;http://www.w3ctech.com/topic/1675?from=timeline&amp;amp;isappinstalled=0&quot;&gt;之前有人翻译过&lt;/a&gt;，但是翻得水平有一点不忍直视，我们不希望浪费这篇好文章。  &lt;br /&gt;
+&lt;p&gt;本文译自 &lt;a href=&quot;https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.v4y4euy1r&quot;&gt;Angular 2 versus React: There Will Be Blood&lt;/a&gt;，其实&lt;a href=&quot;http://www.w3ctech.com/topic/1675?from=timeline&amp;amp;isappinstalled=0&quot;&gt;之前有人翻译过&lt;/a&gt;，但是翻得水平有一点不忍直视，我们不希望浪费这篇好文章。&lt;br /&gt;
 本文由 &lt;a href=&quot;https://www.zhihu.com/people/li-ling-hao&quot;&gt;@李凌豪&lt;/a&gt; &lt;a href=&quot;https://www.zhihu.com/people/huxpro&quot;&gt;@黄玄&lt;/a&gt; 联合翻译，首次发布于&lt;a href=&quot;http://zhuanlan.zhihu.com/FrontendMagazine&quot;&gt;前端外刊评论 · 知乎专栏&lt;/a&gt;，转载请保留原文链接 ;)&lt;/p&gt;
 </description>
         <pubDate>Thu, 14 Jul 2016 20:00:00 +0800</pubDate>
@@ -354,20 +354,20 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;Angular 2 延续了 Angular 1 试图让 HTML 更加强大的老路子。所以即使是像循环或者条件判断这样的简单任务你也不得不使用 Angular 2 的独特语法来完成。例如，Angular 2 通过两种语法同时提供了单向数据绑定与双向数据绑定，可不幸的是它们实在差得有点多：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;myVar&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}}&lt;/span&gt;        //单向数据绑定
+&lt;div class=&quot;language-hbs highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;myVar&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}}&lt;/span&gt;        //单向数据绑定
 ngModel=&quot;myVar&quot;  //双向数据绑定
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;在 React 中，数据绑定语法不取决于数据流的单双向（数据绑定的单双向是在其他地方处理的，不得不说我觉得理应如此）。不管是单向还是双向数据流，绑定语法都是这样的：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;myVar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;myVar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Angular 2 的内联母版（inline master templates）使用了这样的语法：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-hbs highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ngFor=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#hero of heroes&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;hero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}}&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
@@ -385,7 +385,7 @@ ngModel=&quot;myVar&quot;  //双向数据绑定
 
 &lt;p&gt;相比上面 Angular 2 的语法，React 的语法可是纯净的 JavaScript （不过我得承认下面的属性 &lt;code class=&quot;highlighter-rouge&quot;&gt;key&lt;/code&gt; 是个 React 的私货）&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-hbs highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
   { heroes.map(hero =&amp;gt;
     &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{hero.id}&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{hero.name}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
   )}
@@ -417,13 +417,13 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;Angular 2 中的奇怪语法还有点击事件的绑定：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;onSelect(hero)&quot;&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;onSelect(hero)&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;相反，React 再一次使用了普通的 JavaScript：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onSelect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onSelect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -491,7 +491,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;h3 id=&quot;section-7&quot;&gt;著作权声明&lt;/h3&gt;
 
-&lt;p&gt;本文译自 &lt;a href=&quot;https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.v4y4euy1r&quot;&gt;Angular 2 versus React: There Will Be Blood&lt;/a&gt;，其实&lt;a href=&quot;http://www.w3ctech.com/topic/1675?from=timeline&amp;amp;isappinstalled=0&quot;&gt;之前有人翻译过&lt;/a&gt;，但是翻得水平有一点不忍直视，我们不希望浪费这篇好文章。  &lt;br /&gt;
+&lt;p&gt;本文译自 &lt;a href=&quot;https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51#.v4y4euy1r&quot;&gt;Angular 2 versus React: There Will Be Blood&lt;/a&gt;，其实&lt;a href=&quot;http://www.w3ctech.com/topic/1675?from=timeline&amp;amp;isappinstalled=0&quot;&gt;之前有人翻译过&lt;/a&gt;，但是翻得水平有一点不忍直视，我们不希望浪费这篇好文章。&lt;br /&gt;
 本文由 &lt;a href=&quot;https://www.zhihu.com/people/li-ling-hao&quot;&gt;@李凌豪&lt;/a&gt; &lt;a href=&quot;https://www.zhihu.com/people/huxpro&quot;&gt;@黄玄&lt;/a&gt; 联合翻译，首次发布于&lt;a href=&quot;http://zhuanlan.zhihu.com/FrontendMagazine&quot;&gt;前端外刊评论 · 知乎专栏&lt;/a&gt;，转载请保留原文链接 ;)&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 20:00:00 +0800</pubDate>
@@ -567,7 +567,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;h3 id=&quot;scoping-components-brsmall-styleline-height2emcss-blocks-should-only-be-used-inside-a-component-of-the-same-namesmall&quot;&gt;1. Scoping Components &lt;br /&gt;&lt;small style=&quot;line-height:2em;&quot;&gt;&lt;em&gt;CSS Blocks should only be used inside a component of the same name.&lt;/em&gt;&lt;/small&gt;&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Component/index.scss
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Component/index.scss
 &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ComponentName&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--mofierName&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;__decendentName&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -578,7 +578,7 @@ React     : 直接用 JS 就好啦 :)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Component/index.js&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Component/index.js&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;./index.scss&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -587,7 +587,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;h3 id=&quot;components-can-be-overrode-by-pages-brsmall-styleline-height2emthere-is-always-requirements-to-rewrite-styles-of-components-in-pagessmall&quot;&gt;2. Components can be Overrode by Pages &lt;br /&gt;&lt;small style=&quot;line-height:2em;&quot;&gt;&lt;em&gt;There is always requirements to rewrite styles of components in pages&lt;/em&gt;&lt;/small&gt;&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Pages/PageA.scss
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Pages/PageA.scss
 &lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;#PageA&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nc&quot;&gt;.pagelet-name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;nc&quot;&gt;.pagelet-descendent-name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
@@ -597,7 +597,7 @@ React     : 直接用 JS 就好啦 :)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Pages/index.js&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Pages/index.js&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;./PageA.scss&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -611,21 +611,21 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;It’s technology-agnostic&lt;/strong&gt;&lt;br /&gt;
+    &lt;p&gt;&lt;strong&gt;It’s technology-agnostic&lt;/strong&gt;
 &lt;small&gt;
   &lt;em&gt;One css framework can be played with whatever technology stacks&lt;/em&gt;&lt;br /&gt;
   &lt;em&gt;You can combined Scss, PostCSS and whatever you want&lt;/em&gt;
 &lt;/small&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Solving problems, and easy&lt;/strong&gt;&lt;br /&gt;
+    &lt;p&gt;&lt;strong&gt;Solving problems, and easy&lt;/strong&gt;
 &lt;small&gt;
   &lt;em&gt;Makes reading and teamwork much easier&lt;/em&gt;&lt;br /&gt;
   &lt;em&gt;Get all benefit from BEM, SUITCSS and others&lt;/em&gt;
 &lt;/small&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Leverage the power of cascading properly&lt;/strong&gt;&lt;br /&gt;
+    &lt;p&gt;&lt;strong&gt;Leverage the power of cascading properly&lt;/strong&gt;
 &lt;small&gt;
   &lt;em&gt;Scoping components but allow reasonable overriding&lt;/em&gt;&lt;br /&gt;
   &lt;em&gt;It’s pragmatic, flexible and hitting the sweet spot&lt;/em&gt;
@@ -653,8 +653,8 @@ React     : 直接用 JS 就好啦 :)
         <description>&lt;p&gt;2015 年 9 月，Apple 重磅发布了全新的 iPhone 6s/6s Plus、iPad Pro 与全新的操作系统 watchOS 2 与 tvOS 9（是的，这货居然是第 9 版），加上已经发布的 iOS 9，它们都为前端世界带来了哪些变化呢？作为一个 web 开发者，是时候站在我们的角度来说一说了！&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;注！&lt;/strong&gt; 该译文存在大量英文术语，笔者将默认读者知晓 ES6、viewport、native app、webview 等常用前端术语，并不对这些已知术语进行汉语翻译&lt;br /&gt;
-对于新发布或较新的产品名称与技术术语，诸如 Apple Pen、Split View 等专有名词，笔者将在文中使用其英文名，但会尝试对部分名词进行汉语标注&lt;br /&gt;
+  &lt;p&gt;&lt;strong&gt;注！&lt;/strong&gt; 该译文存在大量英文术语，笔者将默认读者知晓 ES6、viewport、native app、webview 等常用前端术语，并不对这些已知术语进行汉语翻译
+对于新发布或较新的产品名称与技术术语，诸如 Apple Pen、Split View 等专有名词，笔者将在文中使用其英文名，但会尝试对部分名词进行汉语标注
 另外，出于对 wiki 式阅读的偏爱，笔者为您添加了很多额外的链接，方便您查阅文档或出处&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -765,7 +765,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;在这个模式下，无论横屏还是竖屏，所有的 iPad（包括 Pro）都会把你的网站以 320px 的 viewport 宽度进行渲染，就好像在一个大 iPhone 5 上一样。你可以在 CSS 中通过 media query（媒体查询）探测到这个模式：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* iPad Air or iPad Mini */&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* iPad Air or iPad Mini */&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;device-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;768px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;320px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;/* iPad Pro */&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;device-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;1024px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;320px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
@@ -807,7 +807,7 @@ React     : 直接用 JS 就好啦 :)
 &lt;p&gt;当你需要基于 web 的鉴权，比如 OAuth 时，使用 Safari View Controller 同样是一个好主意，这样就不再需要打开浏览器再重定向回你的应用。不过注意了，Safari View Controller 只适用于在线、公开的 web 内容。如果你的 web 内容假设在本地或者私服，那么 WKWebView 仍然是最推荐的选择。&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;笔者八卦一下，Safari View Controller 实际上也算是半个社区推进的产物。早在 2014 年 12 月，Tumblr 的 iOS 工程师 Bryan 就发表了一篇著名的 &lt;a href=&quot;http://bryan.io/post/104845880796/we-need-a-safari-view-controller&quot;&gt;We need a “Safari view controller”&lt;/a&gt; 叙述现有 webview 在第三方登录鉴权时的窘境。&lt;br /&gt;
+  &lt;p&gt;笔者八卦一下，Safari View Controller 实际上也算是半个社区推进的产物。早在 2014 年 12 月，Tumblr 的 iOS 工程师 Bryan 就发表了一篇著名的 &lt;a href=&quot;http://bryan.io/post/104845880796/we-need-a-safari-view-controller&quot;&gt;We need a “Safari view controller”&lt;/a&gt; 叙述现有 webview 在第三方登录鉴权时的窘境。
 2015 年 6 月，Apple Safari 工程师 Ricky Mondello 的 Twitter 宣告了这个设想的落地：You all asked for it. Come see me introduce it. Introducing Safari View Controller 1:30 PM, Tuesday. Nob Hill.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -879,7 +879,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;举个例子，我们可以在内嵌模式与 PiP 模式中切换：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;webkitSetPresentationMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;webkitSetPresentationMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;webkitPresentationMode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;picture-in-picture&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;
     &lt;span class=&quot;s2&quot;&gt;&quot;inline&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
     &lt;span class=&quot;s2&quot;&gt;&quot;picture-in-picture&quot;&lt;/span&gt;
@@ -895,7 +895,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;iOS 9 上的 Safari 现在支持了来自 Filter Effect v2 spec（滤镜特效第二版规范）的 &lt;strong&gt;backdrop-filter&lt;/strong&gt;。比如说，我们可以使用一个半透明的背景并且对其背后的背景使用滤镜：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
    &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
    &lt;span class=&quot;nl&quot;&gt;-webkit-backdrop-filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blur&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
    &lt;span class=&quot;py&quot;&gt;backdrop-filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blur&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -911,7 +911,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;来看个例子：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#photo-gallery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#photo-gallery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;overflow-x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;scroll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;-webkit-scroll-snap-points-x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -928,7 +928,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;CSS Supports，包括 CSS &lt;code class=&quot;highlighter-rouge&quot;&gt;@supports&lt;/code&gt; 与来自 CSS Conditional Rules Module Level 3 spec 的 JavaScript CSS Supports API 都在 iOS 上迎来降临。现在，我们可以针对某个 CSS 属性的特定值的支持情况来编写代码：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@supports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;-webkit-scroll-snap-type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mandatory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@supports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;-webkit-scroll-snap-type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mandatory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;c&quot;&gt;/* we use it */&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -936,7 +936,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;同样，使用 JavaScript：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CSS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;supports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;-webkit-scroll-snap-type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;mandatory&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CSS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;supports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;-webkit-scroll-snap-type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;mandatory&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -982,7 +982,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;h3 id=&quot;section-5&quot;&gt;著作权声明&lt;/h3&gt;
 
-&lt;p&gt;本文译自 &lt;a href=&quot;http://www.mobilexweb.com/blog/ios9-safari-for-web-developers&quot;&gt;iOS 9, Safari and the Web: 3D Touch, new Responsive Web Design, Native integration and HTML5 APIs — Breaking the Mobile Web&lt;/a&gt;   &lt;br /&gt;
+&lt;p&gt;本文译自 &lt;a href=&quot;http://www.mobilexweb.com/blog/ios9-safari-for-web-developers&quot;&gt;iOS 9, Safari and the Web: 3D Touch, new Responsive Web Design, Native integration and HTML5 APIs — Breaking the Mobile Web&lt;/a&gt; &lt;br /&gt;
 译者 &lt;a href=&quot;http://weibo.com/huxpro&quot;&gt;黄玄&lt;/a&gt;，首次发布于 &lt;a href=&quot;http://huangxuan.me&quot;&gt;Hux Blog&lt;/a&gt;，转载请保留以上链接&lt;/p&gt;
 </description>
         <pubDate>Tue, 15 Dec 2015 00:00:00 +0800</pubDate>
@@ -1006,29 +1006,29 @@ React     : 直接用 JS 就好啦 :)
   &lt;p&gt;这篇文章转载自&lt;a href=&quot;https://www.zhihu.com/question/21921588/answer/69680480&quot;&gt;我在知乎上的回答&lt;/a&gt;，也被刊登于&lt;a href=&quot;http://www.uisdc.com/head-first-front-end&quot;&gt;优秀网页设计&lt;/a&gt;等多个网站上 ;)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;笔者的经历在知乎就可以看到，大学专业是数字媒体艺术，大一实习过动效设计师，大二拿到了人生第一个大公司 offer 是阿里的交互设计，后来转岗到淘宝旅行的前端团队，现在在微信电影票做前端研发。&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;也是走过了不少野路子，不过还好有小右哥 &lt;a data-hash=&quot;cfdec6226ece879d2571fbc274372e9f&quot; href=&quot;//www.zhihu.com/people/cfdec6226ece879d2571fbc274372e9f&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@尤雨溪&quot; data-tip=&quot;p$b$cfdec6226ece879d2571fbc274372e9f&quot;&gt;@尤雨溪&lt;/a&gt; 这样艺术/设计转前端的大神在前面做典范，也证明这条路是玩的通的 ;)&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;接下来就说说自己的学习建议吧，一个小教程，也是自己走过的流程，仅供参考哈&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;————&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;背景篇&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;在这个时代学习新东西，一定要善于使用 Bing/Google 等搜索引擎…网络上的资源非常丰富，自学能力也尤为重要，尤其是对于学习技术！&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;入门篇（HTML/CSS）&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;说起设计师希望学前端的初衷，大概还是因为各种华丽的网页特效/交互太过吸引人，这种感觉大概就是：“Hey，我的设计可以做成网页访问了呢！”&lt;br /&gt;
-&lt;br /&gt;好在，“展示”对于前端技术来说反而是最简单的部分。所以，放下你对“编程”两个字的恐惧，&lt;b&gt;从“称不上是编程语言”的 HTML/CSS 开始，先做点有成就感的东西出来吧！&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;对于设计师来说，最有成就感的一定是“可以看到的东西”，而 HTML/CSS 正是用来干这个的，HTML 就是一堆非常简单的标签，而 CSS 无非就是把你画画的流程用&lt;b&gt;英语&lt;/b&gt;按一定的格式写出来而已：&lt;br /&gt;
+&lt;p&gt;笔者的经历在知乎就可以看到，大学专业是数字媒体艺术，大一实习过动效设计师，大二拿到了人生第一个大公司 offer 是阿里的交互设计，后来转岗到淘宝旅行的前端团队，现在在微信电影票做前端研发。
+&lt;br /&gt;
+&lt;br /&gt;也是走过了不少野路子，不过还好有小右哥 &lt;a data-hash=&quot;cfdec6226ece879d2571fbc274372e9f&quot; href=&quot;//www.zhihu.com/people/cfdec6226ece879d2571fbc274372e9f&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@尤雨溪&quot; data-tip=&quot;p$b$cfdec6226ece879d2571fbc274372e9f&quot;&gt;@尤雨溪&lt;/a&gt; 这样艺术/设计转前端的大神在前面做典范，也证明这条路是玩的通的 ;)
+&lt;br /&gt;
+&lt;br /&gt;接下来就说说自己的学习建议吧，一个小教程，也是自己走过的流程，仅供参考哈
+&lt;br /&gt;
+&lt;br /&gt;————
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;背景篇&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;在这个时代学习新东西，一定要善于使用 Bing/Google 等搜索引擎…网络上的资源非常丰富，自学能力也尤为重要，尤其是对于学习技术！
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;入门篇（HTML/CSS）&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;说起设计师希望学前端的初衷，大概还是因为各种华丽的网页特效/交互太过吸引人，这种感觉大概就是：“Hey，我的设计可以做成网页访问了呢！”
+&lt;br /&gt;好在，“展示”对于前端技术来说反而是最简单的部分。所以，放下你对“编程”两个字的恐惧，&lt;b&gt;从“称不上是编程语言”的 HTML/CSS 开始，先做点有成就感的东西出来吧！&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;对于设计师来说，最有成就感的一定是“可以看到的东西”，而 HTML/CSS 正是用来干这个的，HTML 就是一堆非常简单的标签，而 CSS 无非就是把你画画的流程用&lt;b&gt;英语&lt;/b&gt;按一定的格式写出来而已：
 &lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt; p is paragraph! &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt; p is paragraph! &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
@@ -1036,10 +1036,10 @@ React     : 直接用 JS 就好啦 :)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;是不是非常容易，就跟读英语一样！&lt;br /&gt;
-&lt;br /&gt;接下来，你就需要开始自学啦，比如常用 HTML 标签的意思，各种 CSS 的属性，还有 CSS 的盒模型、优先级、选择器……放心，它们都很容易；能玩得转 PS/AI/Flash/Axure/AE/Sketch 的设计师们，学这个洒洒水啦&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;推荐几个资源：&lt;br /&gt;
+&lt;p&gt;是不是非常容易，就跟读英语一样！
+&lt;br /&gt;接下来，你就需要开始自学啦，比如常用 HTML 标签的意思，各种 CSS 的属性，还有 CSS 的盒模型、优先级、选择器……放心，它们都很容易；能玩得转 PS/AI/Flash/Axure/AE/Sketch 的设计师们，学这个洒洒水啦
+&lt;br /&gt;
+&lt;br /&gt;推荐几个资源：
 &lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;//link.zhihu.com/?target=http%3A//www.w3school.com.cn/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;w3school 在线教程&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; (中文，一个很 Low 但是又很好的入门学习网站）
@@ -1049,133 +1049,133 @@ React     : 直接用 JS 就好啦 :)
         &lt;br /&gt;
     &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;br /&gt;&lt;b&gt;这个阶段的练习主要是“临摹”：用代码画出你想画的网站，越多越好。&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;对于书，我&lt;b&gt;非常不推荐&lt;/b&gt;上来就去看各种厚厚的入门/指南书，没必要！这一个阶段应该快速上手，培养兴趣，培养成就感。先做出可以看的东西再说，掌握常用的 HTML/CSS 就够用了&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;如果完成的好，这个阶段过后你大概就可以写出一些简单又好看的“静态网页”了，比如这个作品集/简历：&lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/portfolio/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Portfolio - 黄玄的博客&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; （好久没更新了…丢人现眼）&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;入门篇（JavaScript/jQuery）&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;想要在网页上实现一些交互效果，比如轮播图、点击按钮后播放动画？那你就必须要开始学习 JavaScript 了！JavaScript 是一门完整、强大并且非常热门的编程语言，你在浏览器里看到的所有交互或者高级功能都是由它在背后支撑的！&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;举个小栗子：&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;b&gt;这个阶段的练习主要是“临摹”：用代码画出你想画的网站，越多越好。&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;对于书，我&lt;b&gt;非常不推荐&lt;/b&gt;上来就去看各种厚厚的入门/指南书，没必要！这一个阶段应该快速上手，培养兴趣，培养成就感。先做出可以看的东西再说，掌握常用的 HTML/CSS 就够用了
+&lt;br /&gt;
+&lt;br /&gt;如果完成的好，这个阶段过后你大概就可以写出一些简单又好看的“静态网页”了，比如这个作品集/简历：&lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/portfolio/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Portfolio - 黄玄的博客&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; （好久没更新了…丢人现眼）
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;入门篇（JavaScript/jQuery）&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;想要在网页上实现一些交互效果，比如轮播图、点击按钮后播放动画？那你就必须要开始学习 JavaScript 了！JavaScript 是一门完整、强大并且非常热门的编程语言，你在浏览器里看到的所有交互或者高级功能都是由它在背后支撑的！
+&lt;br /&gt;
+&lt;br /&gt;举个小栗子：
 &lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;就这一行，就可以在浏览器里弹出 Hello World 啦！&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;在了解一些基础的 JavaScript 概念（变量、函数、基本类型）后，我们可以直接去学习 jQuery，你不用知道它具体是什么（它是一个 JavaScript 代码库），你只要知道它可以显著地降低你编写交互的难度就好了：&lt;br /&gt;
+&lt;p&gt;就这一行，就可以在浏览器里弹出 Hello World 啦！
+&lt;br /&gt;
+&lt;br /&gt;在了解一些基础的 JavaScript 概念（变量、函数、基本类型）后，我们可以直接去学习 jQuery，你不用知道它具体是什么（它是一个 JavaScript 代码库），你只要知道它可以显著地降低你编写交互的难度就好了：
 &lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;.className&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;.className&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
   &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello jQuery&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;通过 jQuery，我们可以继续使用在 CSS 中学到的“选择器”&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;对于没有编程基础的人来说，想要完全掌握它们两并不容易。作为设计师，很多时候我们可以先不必深究它们的原理，而是尝试直接应用它！这样成就感会来得很快，并且你可以通过实际应用更加理解 JavaScript 是用来做什么的。&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;我仍然推荐你使用 &lt;a href=&quot;http://www.w3school.com.cn/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;w3school 在线教程&lt;/a&gt; 与 &lt;a href=&quot;//www.codecademy.com/&quot; target=&quot;_blank&quot;&gt;http://www.codecademy.com/&lt;/a&gt; 进行学习。另外，你可以看一看诸如《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//book.douban.com/subject/10792216/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;锋利的jQuery (豆瓣)&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》 这一类非常实用的书籍，可以让你很快上手做出一些简单的效果来！&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;如果学习得顺利，你还可以尝试使用各种丰富的 jQuery 插件，你会发现写出支持用户交互的网站也没有那么困难～很多看上去很复杂的功能（比如轮播图、灯箱、下拉菜单），搜一搜然后看看文档（教程）、改改示例代码就好了。&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;比如说，配合 &lt;a href=&quot;//link.zhihu.com/?target=https%3A//github.com/Huxpro/jquery.HSlider&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Huxpro/jquery.HSlider · GitHub&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; 这样的轮播图插件，你可以很轻松的写出 &lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/jquery.HSlider/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;HSlider | Demo&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; 这样的网页相册或者 &lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/jquery.HSlider/demo-weather-app/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;HSlider | Weather&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; 这样的手机端 App 原型～&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;最后，我想推荐下 &lt;a href=&quot;//link.zhihu.com/?target=http%3A//getbootstrap.com/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Bootstrap · The world’s most popular mobile-first and respons&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; ，这是世界上最知名的前端 UI 框架之一，提供了大量 CSS 样式与 jQuery 插件。它非常容易学习并且中英文教程都非常健全，你并不需要理解它背后的工作原理就能很好的使用它，让你快速达到“可以建站的水平”。有余力的话，你不但可以学习如何使用它，还可以学习它背后的设计思想。&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;转职方向一：前端重构 （Web Rebuild）&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;业内通常把专精 HTML/CSS 的前端从业人员称为重构，而对于注重视觉效果的设计师来说，在掌握基本的 HTML/CSS 后，就可以朝着这个方向发展了。&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;到了这个阶段，你不但要知道怎么写页面，还要知道它们都是为什么，并且知道怎么做更好。这对你理解 Web 世界非常有帮助，并且能帮助你做出更“系统化”的设计。&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;CSS 的学问很多，你需要开始理解文档流、浮动流等各种定位的方式与原理，理解 CSS 的继承复用思想、理解浏览器的差异、兼容、优雅降级……这里强烈推荐一本书：《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//book.douban.com/subject/4736167/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;精通CSS（第2版） (豆瓣)&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》，虽然前端技术突飞猛进，但这本书的思想永远不会过时。&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;HTML 方面，要开始注重语义化、可访问性与结构的合理，你要开始学习“结构与样式的分离”，这里有一本神书将这种分离做到了极致：《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//book.douban.com/subject/2052176/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;CSS禅意花园 (豆瓣)&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;另外，各种炫酷屌的 CSS 3 属性你一定会喜欢：你可以用媒体查询做响应式网页设计，你可以用 transiton 和 animation 做补间动画与关键帧动画，用 transform 做缩放、旋转、3D变换，还有圆角、渐变、阴影、弹性盒！样样都是设计师的神器！&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;如果你还掌握了 &lt;b&gt;入门篇（JavaScript/jQuery）&lt;/b&gt;的知识，那么&lt;b&gt;恭喜你！你已经可以做出很多有趣的网页了！&lt;/b&gt;很多 minisite 或者微信上的“H5” 小广告，这个程度的你已经可以轻松完成了！&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;配合上你的设计功力，你可以开始尝试创作一些好玩的东西，比如这种富含交互和动画的网站 &lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/senova/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;绅宝 SENOVA&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; ，它仍然是基于 &lt;a href=&quot;//link.zhihu.com/?target=https%3A//github.com/Huxpro/jquery.HSlider&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Huxpro/jquery.HSlider · GitHub&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; 实现的！或者给自己做个小小的个人网站试试&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;转职方向二：前端工程师（Front-end Engineer）&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;如果你觉得上述的这些都还满足不了你，你渴望做出更多了不起的交互，甚至你已经喜欢上了编程，想要转行做工程师，或者成为一名全栈设计师，那么你可以朝着这个方向继续发展！&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;这个阶段的最大难度，是你必须&lt;b&gt;学会像一名软件工程师一样思考&lt;/b&gt;。你需要踏踏实实学习编程语言，深入理解作用域、对象、类、封装、继承、面向对象编程、事件侦听、事件冒泡等一大堆编程概念，你还需要了解浏览器，学习 DOM、BOM、CSSOM 的 API，你甚至还需要学习一些网络原理，包括域名、URL、DNS、HTTP 请求都是什么…&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;你可能会被这一大堆名词吓到。确实，想要搞定他们并不容易。但是，你要相信只要你肯花功夫它们也没有那么难，而更重要的是，如果你能拿下他们，你所收获的并不只是这些而已，而是真正跨过了一道大坎 —— &lt;b&gt;你的世界将因此打开， 你看待世界的方式将因此改变&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;对于这个阶段，你可以继续在 &lt;a href=&quot;//www.codecademy.com/&quot; target=&quot;_blank&quot;&gt;http://www.codecademy.com/&lt;/a&gt; 上学习，但是 w3school 已经不够用了，遇到不会的语法，我推荐你查阅 &lt;a href=&quot;//link.zhihu.com/?target=https%3A//developer.mozilla.org/zh-CN/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Mozilla 开发者网络&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;，这是少数中英文都有的非常专业且友好的网站。&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;同时，你可能需要看一些书本来帮助你学习 JavaScript ：&lt;br /&gt;
+&lt;p&gt;通过 jQuery，我们可以继续使用在 CSS 中学到的“选择器”
+&lt;br /&gt;
+&lt;br /&gt;对于没有编程基础的人来说，想要完全掌握它们两并不容易。作为设计师，很多时候我们可以先不必深究它们的原理，而是尝试直接应用它！这样成就感会来得很快，并且你可以通过实际应用更加理解 JavaScript 是用来做什么的。
+&lt;br /&gt;
+&lt;br /&gt;我仍然推荐你使用 &lt;a href=&quot;http://www.w3school.com.cn/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;w3school 在线教程&lt;/a&gt; 与 &lt;a href=&quot;//www.codecademy.com/&quot; target=&quot;_blank&quot;&gt;http://www.codecademy.com/&lt;/a&gt; 进行学习。另外，你可以看一看诸如《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//book.douban.com/subject/10792216/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;锋利的jQuery (豆瓣)&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》 这一类非常实用的书籍，可以让你很快上手做出一些简单的效果来！
+&lt;br /&gt;
+&lt;br /&gt;如果学习得顺利，你还可以尝试使用各种丰富的 jQuery 插件，你会发现写出支持用户交互的网站也没有那么困难～很多看上去很复杂的功能（比如轮播图、灯箱、下拉菜单），搜一搜然后看看文档（教程）、改改示例代码就好了。
+&lt;br /&gt;
+&lt;br /&gt;比如说，配合 &lt;a href=&quot;//link.zhihu.com/?target=https%3A//github.com/Huxpro/jquery.HSlider&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Huxpro/jquery.HSlider · GitHub&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; 这样的轮播图插件，你可以很轻松的写出 &lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/jquery.HSlider/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;HSlider | Demo&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; 这样的网页相册或者 &lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/jquery.HSlider/demo-weather-app/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;HSlider | Weather&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; 这样的手机端 App 原型～
+&lt;br /&gt;
+&lt;br /&gt;最后，我想推荐下 &lt;a href=&quot;//link.zhihu.com/?target=http%3A//getbootstrap.com/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Bootstrap · The world’s most popular mobile-first and respons&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; ，这是世界上最知名的前端 UI 框架之一，提供了大量 CSS 样式与 jQuery 插件。它非常容易学习并且中英文教程都非常健全，你并不需要理解它背后的工作原理就能很好的使用它，让你快速达到“可以建站的水平”。有余力的话，你不但可以学习如何使用它，还可以学习它背后的设计思想。
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;转职方向一：前端重构 （Web Rebuild）&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;业内通常把专精 HTML/CSS 的前端从业人员称为重构，而对于注重视觉效果的设计师来说，在掌握基本的 HTML/CSS 后，就可以朝着这个方向发展了。
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;到了这个阶段，你不但要知道怎么写页面，还要知道它们都是为什么，并且知道怎么做更好。这对你理解 Web 世界非常有帮助，并且能帮助你做出更“系统化”的设计。&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;CSS 的学问很多，你需要开始理解文档流、浮动流等各种定位的方式与原理，理解 CSS 的继承复用思想、理解浏览器的差异、兼容、优雅降级……这里强烈推荐一本书：《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//book.douban.com/subject/4736167/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;精通CSS（第2版） (豆瓣)&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》，虽然前端技术突飞猛进，但这本书的思想永远不会过时。
+&lt;br /&gt;
+&lt;br /&gt;HTML 方面，要开始注重语义化、可访问性与结构的合理，你要开始学习“结构与样式的分离”，这里有一本神书将这种分离做到了极致：《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//book.douban.com/subject/2052176/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;CSS禅意花园 (豆瓣)&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》
+&lt;br /&gt;
+&lt;br /&gt;另外，各种炫酷屌的 CSS 3 属性你一定会喜欢：你可以用媒体查询做响应式网页设计，你可以用 transiton 和 animation 做补间动画与关键帧动画，用 transform 做缩放、旋转、3D变换，还有圆角、渐变、阴影、弹性盒！样样都是设计师的神器！
+&lt;br /&gt;
+&lt;br /&gt;如果你还掌握了 &lt;b&gt;入门篇（JavaScript/jQuery）&lt;/b&gt;的知识，那么&lt;b&gt;恭喜你！你已经可以做出很多有趣的网页了！&lt;/b&gt;很多 minisite 或者微信上的“H5” 小广告，这个程度的你已经可以轻松完成了！
+&lt;br /&gt;
+&lt;br /&gt;配合上你的设计功力，你可以开始尝试创作一些好玩的东西，比如这种富含交互和动画的网站 &lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/senova/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;绅宝 SENOVA&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; ，它仍然是基于 &lt;a href=&quot;//link.zhihu.com/?target=https%3A//github.com/Huxpro/jquery.HSlider&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Huxpro/jquery.HSlider · GitHub&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; 实现的！或者给自己做个小小的个人网站试试
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;转职方向二：前端工程师（Front-end Engineer）&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;如果你觉得上述的这些都还满足不了你，你渴望做出更多了不起的交互，甚至你已经喜欢上了编程，想要转行做工程师，或者成为一名全栈设计师，那么你可以朝着这个方向继续发展！
+&lt;br /&gt;
+&lt;br /&gt;这个阶段的最大难度，是你必须&lt;b&gt;学会像一名软件工程师一样思考&lt;/b&gt;。你需要踏踏实实学习编程语言，深入理解作用域、对象、类、封装、继承、面向对象编程、事件侦听、事件冒泡等一大堆编程概念，你还需要了解浏览器，学习 DOM、BOM、CSSOM 的 API，你甚至还需要学习一些网络原理，包括域名、URL、DNS、HTTP 请求都是什么…
+&lt;br /&gt;
+&lt;br /&gt;你可能会被这一大堆名词吓到。确实，想要搞定他们并不容易。但是，你要相信只要你肯花功夫它们也没有那么难，而更重要的是，如果你能拿下他们，你所收获的并不只是这些而已，而是真正跨过了一道大坎 —— &lt;b&gt;你的世界将因此打开， 你看待世界的方式将因此改变&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;对于这个阶段，你可以继续在 &lt;a href=&quot;//www.codecademy.com/&quot; target=&quot;_blank&quot;&gt;http://www.codecademy.com/&lt;/a&gt; 上学习，但是 w3school 已经不够用了，遇到不会的语法，我推荐你查阅 &lt;a href=&quot;//link.zhihu.com/?target=https%3A//developer.mozilla.org/zh-CN/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Mozilla 开发者网络&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;，这是少数中英文都有的非常专业且友好的网站。
+&lt;br /&gt;
+&lt;br /&gt;同时，你可能需要看一些书本来帮助你学习 JavaScript ：
 &lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
     &lt;li&gt; 《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//book.douban.com/subject/10546125/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;JavaScript高级程序设计（第3版） (豆瓣)&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; 》或 《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//book.douban.com/subject/2228378/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;JavaScript权威指南 (豆瓣)&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》，大而全的书只需要一本就够了&lt;/li&gt;
     &lt;li&gt;如果上面这本你觉得太难，你可以先看 《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//book.douban.com/subject/6038371/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;JavaScript DOM编程艺术 （第2版） (豆瓣)&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》来过渡一下，这本书比较容易，它会教给你 “优雅降级、渐进增强”的优秀思想&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;br /&gt;如果你能顺利得渡过了这个阶段，我想你已经能做出很多令你自豪的网站了！试着向身边的工程师朋友询问如何购买域名、配置简单的静态服务器，或者搜搜“Github Pages”，然后把你的作品挂在网络上让大家欣赏吧！&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;你还可以试着用 JavaScript 写写小游戏，这不但能锻炼你的编程水平还非常有趣～比如这是我刚学 JS 不久后 hack 一晚的产物 —— 用 DOM 实现的打飞机：&lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/aircraft&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Hux - Aircraft&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; （不支持手机）&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;入行篇&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;如果你能完成上述所有的学习，你已经是一名非常出色的前端学徒了！对于只是想要丰富技能的设计师或者产品经理来说，接下来的内容可能会让你感到不适 ;(&lt;br /&gt;
-&lt;br /&gt;但如果你铁了心想要真正入行进入大公司从事专职前端开发的工作，那么你可以接着往下看：&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;近几年的前端技术发展迅猛，前端工程师早已不是切切图写写页面做点特效就完事的职位，你需要具备相当完善的工程师素质与计算机知识，成为一名真正的工程师。&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要非常了解 JavaScript 这门语言&lt;/b&gt;，包括 闭包、IIFE、this、prototype 及一些底层实现（ES、VO、AO）、熟悉常用的设计模式与 JavaScript 范式（比如实现类与私有属性）。另外，新的 ES6 已经问世，包括 class, module, arrow function 等等&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要非常了解前端常用的网络及后端知识&lt;/b&gt;，包括 Ajax、JSON、HTTP 请求、GET/POST 差异、RESTful、URL hash/query、webSocket、常用的跨域方式（JSONP/CORS、HTTP 强缓存/协商缓存，以及如何利用 CDN 、静态网站/动态网站区别、服务器端渲染/前端渲染区别等等&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要学习使用进阶的 CSS&lt;/b&gt;，包括熟悉 CSS 3，使用 Scss/Less 等编译到 CSS 的语言，使用 autoprefixer 等 PostCSS 工具，了解 CSS 在 Scope/Namespace 上的缺陷，你还可以学习 CSS Modules、CSS in JS 这些有趣的新玩意&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要非常了解前端的模块化规范&lt;/b&gt;，可能在你学习到这里的时候，Require.js/AMD 已经再见了，但是 CommonJS 与 ES6 Modules 你必须要了解。（你可以观看我的分享《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/js-module-7day/%23/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;JavaScript Modularization Seven Day&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》 来学习 JS 模块化的历史）&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要熟悉 Git 与 Shell 的使用&lt;/b&gt;，包括基于 git 的版本管理、分支管理与团队协作，包括简单的 Linux/Unix 命令、你要知道大部分程序员的工作可以通过 shell 更快更酷的完成，并且很多“软件”只能通过 shell 来使用。你还可以把你的代码放到 github 上与人分享，并且学习 github 上其他优秀的开源代码&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要熟悉并且习惯使用 Node&lt;/b&gt;，包括了解 npm、使用 Grunt/Gulp/Browserify/Webpack 优化你的工作流、对你的代码进行打包、混淆、压缩、发布，你还可以使用 Express/Koa 配合 MongoDB/Redis 涉足到后端领域，或者尝试用 Node 做后端渲染优化你的首屏体验&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要了解各种 HTML 5 的新 API&lt;/b&gt;，包括 &amp;lt;video&amp;gt;/&amp;lt;audio&amp;gt;，包括 Canvas，webGL、File API、App Cache、localStorage、IndexedDB、Drag &amp;amp; Drop、更高级的 DOM API、Fetch API 等等&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要学习 JavaScript 的单线程与异步编程方法&lt;/b&gt;，因为它们非常非常常用、包括 setTimeout/setInterval，回调与回调地狱、事件与event loop、还有 Promise 甚至 Async/Await&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要非常了解浏览器&lt;/b&gt;，包括主流浏览器的名称、内核与差异、包括私有属性与 -webkit- 等厂商前缀，你需要学习如何使用 Chrome DevTool，你需要了解浏览器渲染的 reflow/repaint 来避免 Jank 并进行有针对性的性能优化&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要专门学习 Mobile Web&lt;/b&gt;，因为移动互联网是趋势。包括 viewport、CSS pixel、 touch 事件、iOS/Android 浏览器的差异与兼容、移动端的性能优化、300ms delay 等等…你还需要知道 Hybrid 是什么，包括 Cordova/Phonegap，更复杂的比如和 iOS/Android 通信的机制，比如 URI Scheme 或者 JS Bridge&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要学习一些&lt;/b&gt;&lt;b&gt;非常火热的前端框架/库&lt;/b&gt;，他们不但能帮助你更快的进行开发、更重要的是他们背后所蕴含的思想。包括 Backbone、Angular、Vue、React、Polymer 等等、了解它们背后的双向数据绑定、单向数据流、MVC/MVVM/Flux 思想、Web Component 与组件化等等&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要学习如何构建 web 单页应用&lt;/b&gt;，这是 web 的未来，包括利用 history API 或者 hash 实现路由，包括基于 Ajax + 模版引擎或者其他技术的前端渲染、包括组织较为复杂的软件设计等等&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;我还建议你学习更多的计算机知识&lt;/b&gt;，它们能对你的代码能起到潜移默化的作用，包括简单的计算机体系结构、更广泛的编程知识（面向对象/函数式等）、栈、堆、数组、队列、哈希表、树、图等数据结构、时间复杂度与空间复杂度以及简单的算法等等&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要了解业内的大神并阅读它们的博客/知乎/微博&lt;/b&gt;，比如 &lt;a data-hash=&quot;cfdec6226ece879d2571fbc274372e9f&quot; href=&quot;//www.zhihu.com/people/cfdec6226ece879d2571fbc274372e9f&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@尤雨溪&quot; data-tip=&quot;p$b$cfdec6226ece879d2571fbc274372e9f&quot;&gt;@尤雨溪&lt;/a&gt;&lt;a data-hash=&quot;3ec3b166992a5a90a1083945d2490d38&quot; href=&quot;//www.zhihu.com/people/3ec3b166992a5a90a1083945d2490d38&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@贺师俊&quot; data-tip=&quot;p$b$3ec3b166992a5a90a1083945d2490d38&quot;&gt;@贺师俊&lt;/a&gt;&lt;a data-hash=&quot;3212f9044005e9306aab1b61e74e7ae6&quot; href=&quot;//www.zhihu.com/people/3212f9044005e9306aab1b61e74e7ae6&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@张云龙&quot; data-tip=&quot;p$b$3212f9044005e9306aab1b61e74e7ae6&quot;&gt;@张云龙&lt;/a&gt;&lt;a data-hash=&quot;c5198d4e9c0145aee04dd53cc6590edd&quot; href=&quot;//www.zhihu.com/people/c5198d4e9c0145aee04dd53cc6590edd&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@徐飞&quot; data-tip=&quot;p$b$c5198d4e9c0145aee04dd53cc6590edd&quot;&gt;@徐飞&lt;/a&gt;&lt;a data-hash=&quot;20fdd386a6e59d178b8fe14e2863cb40&quot; href=&quot;//www.zhihu.com/people/20fdd386a6e59d178b8fe14e2863cb40&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@张克军&quot; data-tip=&quot;p$b$20fdd386a6e59d178b8fe14e2863cb40&quot;&gt;@张克军&lt;/a&gt;&lt;a data-hash=&quot;c11336b8607d86bc9090bed90757a34c&quot; href=&quot;//www.zhihu.com/people/c11336b8607d86bc9090bed90757a34c&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@玉伯&quot; data-tip=&quot;p$b$c11336b8607d86bc9090bed90757a34c&quot;&gt;@玉伯&lt;/a&gt;&lt;a data-hash=&quot;64458d15a75902cd0425732b7b757705&quot; href=&quot;//www.zhihu.com/people/64458d15a75902cd0425732b7b757705&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@拔赤&quot; data-tip=&quot;p$b$64458d15a75902cd0425732b7b757705&quot;&gt;@拔赤&lt;/a&gt;&lt;a data-hash=&quot;0d9b98af12015c94cff646a6fc0773b5&quot; href=&quot;//www.zhihu.com/people/0d9b98af12015c94cff646a6fc0773b5&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@寸志&quot; data-tip=&quot;p$b$0d9b98af12015c94cff646a6fc0773b5&quot;&gt;@寸志&lt;/a&gt;&lt;a data-hash=&quot;790dccce26904cdcd11b0fad3bac37b7&quot; href=&quot;//www.zhihu.com/people/790dccce26904cdcd11b0fad3bac37b7&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@题叶&quot; data-tip=&quot;p$b$790dccce26904cdcd11b0fad3bac37b7&quot;&gt;@题叶&lt;/a&gt;&lt;a data-hash=&quot;85de6407f2219137df29b4249b91cfd5&quot; href=&quot;//www.zhihu.com/people/85de6407f2219137df29b4249b91cfd5&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@郭达峰&quot; data-tip=&quot;p$b$85de6407f2219137df29b4249b91cfd5&quot;&gt;@郭达峰&lt;/a&gt; 等等等等，很多思想和新东西只有从他们身上才能学到。我还推荐你多参加技术交流会，多认识一些可以一起学习的小伙伴，你们可以互相交流并且一起成长&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;你需要具备很强的自学能力、对技术有热情并且不断跟进&lt;/b&gt;。因为 JavaScript/前端的社区非常非常活跃，有太多的新东西需要你自己来发现与学习：比如 Universal JavaScript、Isomorphic JavaScript、前端测试、HTML5 页游、WebRTC、WebSocket、CSS 4、SVG、HTTP/2、ES 7、React Native、Babel、TypeScript、Electron 等等等等…&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;虽然一下扯得有点多，但这些确实就是你未来将会遇到的。你并不需要全部掌握它们，但是却多多益善；你也可以专精在某几个方面，这已经足以让你成为非常专业的前端工程师。&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;b&gt;所以，如果你自认为涵盖了上述要求的 40%，欢迎简历发 huangxuan@wepiao.com ，实习/全职皆可～&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;如果你能顺利得渡过了这个阶段，我想你已经能做出很多令你自豪的网站了！试着向身边的工程师朋友询问如何购买域名、配置简单的静态服务器，或者搜搜“Github Pages”，然后把你的作品挂在网络上让大家欣赏吧！
+&lt;br /&gt;
+&lt;br /&gt;你还可以试着用 JavaScript 写写小游戏，这不但能锻炼你的编程水平还非常有趣～比如这是我刚学 JS 不久后 hack 一晚的产物 —— 用 DOM 实现的打飞机：&lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/aircraft&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Hux - Aircraft&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt; （不支持手机）
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;入行篇&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;如果你能完成上述所有的学习，你已经是一名非常出色的前端学徒了！对于只是想要丰富技能的设计师或者产品经理来说，接下来的内容可能会让你感到不适 ;(
+&lt;br /&gt;但如果你铁了心想要真正入行进入大公司从事专职前端开发的工作，那么你可以接着往下看：
+&lt;br /&gt;
+&lt;br /&gt;近几年的前端技术发展迅猛，前端工程师早已不是切切图写写页面做点特效就完事的职位，你需要具备相当完善的工程师素质与计算机知识，成为一名真正的工程师。
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要非常了解 JavaScript 这门语言&lt;/b&gt;，包括 闭包、IIFE、this、prototype 及一些底层实现（ES、VO、AO）、熟悉常用的设计模式与 JavaScript 范式（比如实现类与私有属性）。另外，新的 ES6 已经问世，包括 class, module, arrow function 等等
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要非常了解前端常用的网络及后端知识&lt;/b&gt;，包括 Ajax、JSON、HTTP 请求、GET/POST 差异、RESTful、URL hash/query、webSocket、常用的跨域方式（JSONP/CORS、HTTP 强缓存/协商缓存，以及如何利用 CDN 、静态网站/动态网站区别、服务器端渲染/前端渲染区别等等
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要学习使用进阶的 CSS&lt;/b&gt;，包括熟悉 CSS 3，使用 Scss/Less 等编译到 CSS 的语言，使用 autoprefixer 等 PostCSS 工具，了解 CSS 在 Scope/Namespace 上的缺陷，你还可以学习 CSS Modules、CSS in JS 这些有趣的新玩意
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要非常了解前端的模块化规范&lt;/b&gt;，可能在你学习到这里的时候，Require.js/AMD 已经再见了，但是 CommonJS 与 ES6 Modules 你必须要了解。（你可以观看我的分享《&lt;a href=&quot;//link.zhihu.com/?target=http%3A//huangxuan.me/js-module-7day/%23/&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;JavaScript Modularization Seven Day&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;》 来学习 JS 模块化的历史）
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要熟悉 Git 与 Shell 的使用&lt;/b&gt;，包括基于 git 的版本管理、分支管理与团队协作，包括简单的 Linux/Unix 命令、你要知道大部分程序员的工作可以通过 shell 更快更酷的完成，并且很多“软件”只能通过 shell 来使用。你还可以把你的代码放到 github 上与人分享，并且学习 github 上其他优秀的开源代码
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要熟悉并且习惯使用 Node&lt;/b&gt;，包括了解 npm、使用 Grunt/Gulp/Browserify/Webpack 优化你的工作流、对你的代码进行打包、混淆、压缩、发布，你还可以使用 Express/Koa 配合 MongoDB/Redis 涉足到后端领域，或者尝试用 Node 做后端渲染优化你的首屏体验
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要了解各种 HTML 5 的新 API&lt;/b&gt;，包括 &amp;lt;video&amp;gt;/&amp;lt;audio&amp;gt;，包括 Canvas，webGL、File API、App Cache、localStorage、IndexedDB、Drag &amp;amp; Drop、更高级的 DOM API、Fetch API 等等
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要学习 JavaScript 的单线程与异步编程方法&lt;/b&gt;，因为它们非常非常常用、包括 setTimeout/setInterval，回调与回调地狱、事件与event loop、还有 Promise 甚至 Async/Await
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要非常了解浏览器&lt;/b&gt;，包括主流浏览器的名称、内核与差异、包括私有属性与 -webkit- 等厂商前缀，你需要学习如何使用 Chrome DevTool，你需要了解浏览器渲染的 reflow/repaint 来避免 Jank 并进行有针对性的性能优化
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要专门学习 Mobile Web&lt;/b&gt;，因为移动互联网是趋势。包括 viewport、CSS pixel、 touch 事件、iOS/Android 浏览器的差异与兼容、移动端的性能优化、300ms delay 等等…你还需要知道 Hybrid 是什么，包括 Cordova/Phonegap，更复杂的比如和 iOS/Android 通信的机制，比如 URI Scheme 或者 JS Bridge
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要学习一些&lt;/b&gt;&lt;b&gt;非常火热的前端框架/库&lt;/b&gt;，他们不但能帮助你更快的进行开发、更重要的是他们背后所蕴含的思想。包括 Backbone、Angular、Vue、React、Polymer 等等、了解它们背后的双向数据绑定、单向数据流、MVC/MVVM/Flux 思想、Web Component 与组件化等等
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要学习如何构建 web 单页应用&lt;/b&gt;，这是 web 的未来，包括利用 history API 或者 hash 实现路由，包括基于 Ajax + 模版引擎或者其他技术的前端渲染、包括组织较为复杂的软件设计等等
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;我还建议你学习更多的计算机知识&lt;/b&gt;，它们能对你的代码能起到潜移默化的作用，包括简单的计算机体系结构、更广泛的编程知识（面向对象/函数式等）、栈、堆、数组、队列、哈希表、树、图等数据结构、时间复杂度与空间复杂度以及简单的算法等等
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要了解业内的大神并阅读它们的博客/知乎/微博&lt;/b&gt;，比如 &lt;a data-hash=&quot;cfdec6226ece879d2571fbc274372e9f&quot; href=&quot;//www.zhihu.com/people/cfdec6226ece879d2571fbc274372e9f&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@尤雨溪&quot; data-tip=&quot;p$b$cfdec6226ece879d2571fbc274372e9f&quot;&gt;@尤雨溪&lt;/a&gt;&lt;a data-hash=&quot;3ec3b166992a5a90a1083945d2490d38&quot; href=&quot;//www.zhihu.com/people/3ec3b166992a5a90a1083945d2490d38&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@贺师俊&quot; data-tip=&quot;p$b$3ec3b166992a5a90a1083945d2490d38&quot;&gt;@贺师俊&lt;/a&gt;&lt;a data-hash=&quot;3212f9044005e9306aab1b61e74e7ae6&quot; href=&quot;//www.zhihu.com/people/3212f9044005e9306aab1b61e74e7ae6&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@张云龙&quot; data-tip=&quot;p$b$3212f9044005e9306aab1b61e74e7ae6&quot;&gt;@张云龙&lt;/a&gt;&lt;a data-hash=&quot;c5198d4e9c0145aee04dd53cc6590edd&quot; href=&quot;//www.zhihu.com/people/c5198d4e9c0145aee04dd53cc6590edd&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@徐飞&quot; data-tip=&quot;p$b$c5198d4e9c0145aee04dd53cc6590edd&quot;&gt;@徐飞&lt;/a&gt;&lt;a data-hash=&quot;20fdd386a6e59d178b8fe14e2863cb40&quot; href=&quot;//www.zhihu.com/people/20fdd386a6e59d178b8fe14e2863cb40&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@张克军&quot; data-tip=&quot;p$b$20fdd386a6e59d178b8fe14e2863cb40&quot;&gt;@张克军&lt;/a&gt;&lt;a data-hash=&quot;c11336b8607d86bc9090bed90757a34c&quot; href=&quot;//www.zhihu.com/people/c11336b8607d86bc9090bed90757a34c&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@玉伯&quot; data-tip=&quot;p$b$c11336b8607d86bc9090bed90757a34c&quot;&gt;@玉伯&lt;/a&gt;&lt;a data-hash=&quot;64458d15a75902cd0425732b7b757705&quot; href=&quot;//www.zhihu.com/people/64458d15a75902cd0425732b7b757705&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@拔赤&quot; data-tip=&quot;p$b$64458d15a75902cd0425732b7b757705&quot;&gt;@拔赤&lt;/a&gt;&lt;a data-hash=&quot;0d9b98af12015c94cff646a6fc0773b5&quot; href=&quot;//www.zhihu.com/people/0d9b98af12015c94cff646a6fc0773b5&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@寸志&quot; data-tip=&quot;p$b$0d9b98af12015c94cff646a6fc0773b5&quot;&gt;@寸志&lt;/a&gt;&lt;a data-hash=&quot;790dccce26904cdcd11b0fad3bac37b7&quot; href=&quot;//www.zhihu.com/people/790dccce26904cdcd11b0fad3bac37b7&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@题叶&quot; data-tip=&quot;p$b$790dccce26904cdcd11b0fad3bac37b7&quot;&gt;@题叶&lt;/a&gt;&lt;a data-hash=&quot;85de6407f2219137df29b4249b91cfd5&quot; href=&quot;//www.zhihu.com/people/85de6407f2219137df29b4249b91cfd5&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@郭达峰&quot; data-tip=&quot;p$b$85de6407f2219137df29b4249b91cfd5&quot;&gt;@郭达峰&lt;/a&gt; 等等等等，很多思想和新东西只有从他们身上才能学到。我还推荐你多参加技术交流会，多认识一些可以一起学习的小伙伴，你们可以互相交流并且一起成长
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;你需要具备很强的自学能力、对技术有热情并且不断跟进&lt;/b&gt;。因为 JavaScript/前端的社区非常非常活跃，有太多的新东西需要你自己来发现与学习：比如 Universal JavaScript、Isomorphic JavaScript、前端测试、HTML5 页游、WebRTC、WebSocket、CSS 4、SVG、HTTP/2、ES 7、React Native、Babel、TypeScript、Electron 等等等等…
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;虽然一下扯得有点多，但这些确实就是你未来将会遇到的。你并不需要全部掌握它们，但是却多多益善；你也可以专精在某几个方面，这已经足以让你成为非常专业的前端工程师。
+&lt;br /&gt;
+&lt;br /&gt;&lt;b&gt;所以，如果你自认为涵盖了上述要求的 40%，欢迎简历发 huangxuan@wepiao.com ，实习/全职皆可～&lt;/b&gt;
+&lt;br /&gt;
+&lt;br /&gt;
 &lt;br /&gt;咦，这个结尾怪怪的……&lt;/p&gt;
 
 </description>
@@ -1198,7 +1198,7 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;1995 年，它作为网景浏览器（Netscape Navigator）的一部分首次发布，网景给这个新语言命名为 LiveScript。一年后，为了搭上当时媒体热炒 Java 的顺风车，临时改名为了 JavaScript &lt;em&gt;（当然，Java 和 JavaScript 的关系，就和雷锋和雷锋塔一样 —— 并没有什么关系）&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/in-post/post-js-version/javascript-java.jpg&quot; alt=&quot;java-javascript&quot; /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img src=&quot;/img/in-post/post-js-version/javascript-java.jpg&quot; alt=&quot;java-javascript&quot; /&gt;
 &lt;small class=&quot;img-hint&quot;&gt;歪果仁的笑话怎么一点都不好笑&lt;/small&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1247,12 +1247,12 @@ React     : 直接用 JS 就好啦 :)
   &lt;li&gt;如果你希望深入 ES6，这里有两本很不错的书： Axel Rauschmayer 的 &lt;a href=&quot;http://exploringjs.com/&quot;&gt;Exploring ES6&lt;/a&gt;和 Nicholas Zakas 的 &lt;a href=&quot;https://leanpub.com/understandinges6&quot;&gt;Understanding ECMAScript 6&lt;/a&gt;。Axel 的博客 &lt;a href=&quot;http://www.2ality.com/&quot;&gt;2ality&lt;/a&gt; 也是很不错的 ES6 资源&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img class=&quot;shadow&quot; width=&quot;320&quot; src=&quot;/img/in-post/post-js-version/keep-calm-and-learn-javascript.png&quot; /&gt;&lt;br /&gt;
+&lt;p&gt;&lt;img class=&quot;shadow&quot; width=&quot;320&quot; src=&quot;/img/in-post/post-js-version/keep-calm-and-learn-javascript.png&quot; /&gt;
 &lt;small class=&quot;img-hint&quot;&gt;来学 JavaScript 吧！&lt;/small&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;section-1&quot;&gt;著作权声明&lt;/h4&gt;
 
-&lt;p&gt;本文译自 &lt;a href=&quot;http://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/&quot;&gt;ES5, ES6, ES2016, ES.Next: What’s going on with JavaScript versioning?&lt;/a&gt;   &lt;br /&gt;
+&lt;p&gt;本文译自 &lt;a href=&quot;http://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/&quot;&gt;ES5, ES6, ES2016, ES.Next: What’s going on with JavaScript versioning?&lt;/a&gt; &lt;br /&gt;
 译者 &lt;a href=&quot;http://weibo.com/huxpro&quot;&gt;黄玄&lt;/a&gt;，首次发布于 &lt;a href=&quot;http://huangxuan.me&quot;&gt;Hux Blog&lt;/a&gt;，转载请保留以上链接&lt;/p&gt;
 
 </description>
@@ -1348,15 +1348,15 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;旅行社，一个耳熟能详的名字。在互联网的变革到来之前，旅游行业几乎就是旅行社的天下。&lt;/p&gt;
 
-&lt;p&gt;在行业术语里，旅行社被称为 &lt;strong&gt;TA：Travel Agency —— 旅游代理&lt;/strong&gt;。&lt;br /&gt;
+&lt;p&gt;在行业术语里，旅行社被称为 &lt;strong&gt;TA：Travel Agency —— 旅游代理&lt;/strong&gt;。
 旅行社为你提供旅游信息，代理你办航班，定酒店，买门票，办签证，找导游。通过代理你的旅游消费行为，TA 从中获利。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/in-post/post-alitrip-pd/post-alitrip-pd.013.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;ota&quot;&gt;第一轮革命：兴起的电商与 OTA&lt;/h3&gt;
 
-&lt;p&gt;1995 年，中国互联网沸腾元年，北京上海接入 Internet 节点。&lt;br /&gt;
-1998 年，中国互联网电商元年，第一笔在线交易产生。&lt;br /&gt;
+&lt;p&gt;1995 年，中国互联网沸腾元年，北京上海接入 Internet 节点。
+1998 年，中国互联网电商元年，第一笔在线交易产生。
 1999 年，马云的阿里巴巴创办。同年，旅游行业未来的两大巨头，&lt;strong&gt;携程&lt;/strong&gt;、&lt;strong&gt;艺龙&lt;/strong&gt; 双双出世。&lt;/p&gt;
 
 &lt;p&gt;携程、艺龙利用互联网的体验优势，迅速占领了 TA 的市场，它们被称作 &lt;strong&gt;OTA：Online Travel Agency&lt;/strong&gt;&lt;/p&gt;
@@ -1369,15 +1369,15 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;h4 id=&quot;agency-&quot;&gt;Agency 模式&lt;/h4&gt;
 
-&lt;p&gt;Agency，即&lt;strong&gt;代理模式&lt;/strong&gt;。通过代理用户的消费行为，代理商就可以靠佣金的方式从中获利。&lt;br /&gt;
+&lt;p&gt;Agency，即&lt;strong&gt;代理模式&lt;/strong&gt;。通过代理用户的消费行为，代理商就可以靠佣金的方式从中获利。
 举个例子：假设携程旅行网今天给某某酒店拉来了 100 个日间，那么这个酒店就要以 30元/日间 的方式给携程旅行网反多少的红利。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;佣金，说白了，就是中介费。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/in-post/post-alitrip-pd/post-alitrip-pd.016.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;了解了 Agency 模式，我们再回过来看携程、艺龙：&lt;br /&gt;
-虽然渠道改成了互联网，但其商业模式还是 TA 的那套玩法，它们其实是在和传统 TA 分同一块蛋糕。&lt;br /&gt;
+&lt;p&gt;了解了 Agency 模式，我们再回过来看携程、艺龙：
+虽然渠道改成了互联网，但其商业模式还是 TA 的那套玩法，它们其实是在和传统 TA 分同一块蛋糕。
 还是咨询、酒店、机票、旅游团、旅游套餐，只是&lt;strong&gt;你们在线下玩，我去线上玩了&lt;/strong&gt;，我有渠道优势。&lt;/p&gt;
 
 &lt;h3 id=&quot;section-3&quot;&gt;第二轮革命：比价搜索与去哪儿&lt;/h3&gt;
@@ -1394,14 +1394,14 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;p&gt;&lt;img src=&quot;/img/in-post/post-alitrip-pd/post-alitrip-pd.018.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;这个这个玩法一下就厉害了：&lt;br /&gt;
+&lt;p&gt;这个这个玩法一下就厉害了：
 &lt;strong&gt;去哪儿挡在了用户和所有 OTA 之间，OTA 还是做原来的事情，而去哪儿则拿下了用户找 OTA 的过程&lt;/strong&gt;。同是搜索引擎的百度也是如此：百度自己并不生产内容，而是拿下了用户找内容的过程。&lt;/p&gt;
 
 &lt;p&gt;Let’s why search engine awesome：因为用户在互联网的信息海洋上找信息太难了，所以用户必须要靠搜索引擎来解决这个痛点，而搜索引擎自己也就成为了渠道：&lt;/p&gt;
 
 &lt;h4 id=&quot;channel-&quot;&gt;Channel 模式&lt;/h4&gt;
 
-&lt;p&gt;Channel，即&lt;strong&gt;渠道模式&lt;/strong&gt;。通过优化用户的体验路径，在用户和 B 方之前挡了一道，主要对 B 盈利。&lt;br /&gt;
+&lt;p&gt;Channel，即&lt;strong&gt;渠道模式&lt;/strong&gt;。通过优化用户的体验路径，在用户和 B 方之前挡了一道，主要对 B 盈利。
 最常见的对 B 盈利方式就是广告：&lt;strong&gt;Pay for Performance&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/in-post/post-alitrip-pd/post-alitrip-pd.019.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
@@ -1419,17 +1419,17 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;h3 id=&quot;section-4&quot;&gt;第 2.5 轮革命：尴尬的淘宝旅行&lt;/h3&gt;
 
-&lt;p&gt;为什么说淘宝旅行是 2.5 次革命呢，因为它想革，但没革上。&lt;br /&gt;
+&lt;p&gt;为什么说淘宝旅行是 2.5 次革命呢，因为它想革，但没革上。
 为什么没有革上呢？&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;首先是切入时机太晚&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;阿里其实 2010 年就开始做淘宝旅行了，一直划分在淘宝网下，由那时的淘宝北研（淘宝 UED 北京研发）团队负责，这个团队吸纳了大批雅虎中国的精英，技术水平相当高。  &lt;br /&gt;
+&lt;p&gt;阿里其实 2010 年就开始做淘宝旅行了，一直划分在淘宝网下，由那时的淘宝北研（淘宝 UED 北京研发）团队负责，这个团队吸纳了大批雅虎中国的精英，技术水平相当高。&lt;br /&gt;
 可是 2010 年才切入这个市场实在是太晚了，携程、去哪儿的口碑和用户习惯早都养成好几年了，没人会去你淘宝上搜航班酒店，你有大入口也没有用。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;二是资源倾斜不足&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;2010 年还没有什么 &lt;strong&gt;互联网+&lt;/strong&gt; 的概念，结合传统行业也还没有现在这么热，淘宝做旅游这事用了多大力气推很难说，反正我是没听过。&lt;br /&gt;
+&lt;p&gt;2010 年还没有什么 &lt;strong&gt;互联网+&lt;/strong&gt; 的概念，结合传统行业也还没有现在这么热，淘宝做旅游这事用了多大力气推很难说，反正我是没听过。
 阿里同年的发展重心还是在其电商体系的完善上：&lt;strong&gt;淘宝商城&lt;/strong&gt; 启用独立域名，其 B2C 的模式刚好弥补了淘宝 C2C 的问题，这货就是后来的&lt;strong&gt;天猫&lt;/strong&gt;，我们可以比较一下两者在资源倾斜上的差异：&lt;/p&gt;
 
 &lt;table&gt;
@@ -1491,24 +1491,24 @@ React     : 直接用 JS 就好啦 :)
 
 &lt;h3 id=&quot;now&quot;&gt;第三轮革命：Now&lt;/h3&gt;
 
-&lt;p&gt;OK，经过这么一番折腾，第三次变革就来了。&lt;br /&gt;
+&lt;p&gt;OK，经过这么一番折腾，第三次变革就来了。
 BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/in-post/post-alitrip-pd/post-alitrip-pd.028.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;阿里最近动作频频，力推去啊不说，更是收购线下酒店软件石基，配合蚂蚁金服期下芝麻信用开展“酒店信用住”等业务&lt;br /&gt;
-百度早早投资去哪儿，两个搜索引擎起家的公司风格一脉相承。同时，百度也悄悄发布了百度旅行这样的试水产品&lt;br /&gt;
+&lt;p&gt;阿里最近动作频频，力推去啊不说，更是收购线下酒店软件石基，配合蚂蚁金服期下芝麻信用开展“酒店信用住”等业务
+百度早早投资去哪儿，两个搜索引擎起家的公司风格一脉相承。同时，百度也悄悄发布了百度旅行这样的试水产品
 腾讯入股艺龙，同程网等，也在尝试 QQ 旅游等产品&lt;/p&gt;
 
 &lt;p&gt;Update：不过，就在 2015.5 左右，携程宣布收购艺龙，非常戏剧性的局面啊……&lt;/p&gt;
 
-&lt;p&gt;为什么都要介入呢？&lt;br /&gt;
-一是互联网结合传统行业的大潮到来，大家都发现旅游行业是一个金矿，市场其实特别大……&lt;br /&gt;
+&lt;p&gt;为什么都要介入呢？
+一是互联网结合传统行业的大潮到来，大家都发现旅游行业是一个金矿，市场其实特别大……
 二是这个领域确实还有很多可以突破的商业模式存在，很多细分领域都开始有创业公司起来，整个行业的生态也越来越丰富：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/in-post/post-alitrip-pd/post-alitrip-pd.029.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;这种时候，BAT 这样的土豪公司就想进来收网了 —— 砸钱也得砸出个平台来！&lt;br /&gt;
+&lt;p&gt;这种时候，BAT 这样的土豪公司就想进来收网了 —— 砸钱也得砸出个平台来！
 所以，这一轮游戏一定能看到一次大洗牌（艺龙第一个就阵亡了）&lt;/p&gt;
 
 &lt;p&gt;那么，这轮革命怎么演变呢？&lt;/p&gt;
@@ -1540,8 +1540,8 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;本篇完。&lt;/em&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;本文作者系前「阿里旅行 · 去啊」前端实习生，本文系业余时间学习之作。&lt;br /&gt;
-如有任何知识产权、版权问题或理论错误，还请指正。&lt;br /&gt;
+  &lt;p&gt;本文作者系前「阿里旅行 · 去啊」前端实习生，本文系业余时间学习之作。
+如有任何知识产权、版权问题或理论错误，还请指正。
 转载请注明原作者及以上信息。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
@@ -1584,7 +1584,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;让我们看看 Node 中的实现：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 由于 Node 原生支持模块的作用域，并不需要额外的 wrapper&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 由于 Node 原生支持模块的作用域，并不需要额外的 wrapper&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// &quot;as though the module was wrapped in a function&quot;&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;./a&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 加载模块（同步加载）&lt;/span&gt;
@@ -1645,7 +1645,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;RequireJS 主要解决的还是 CommonJS 同步加载脚本不适合浏览器 这个问题：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//CommonJS&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//CommonJS&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Employee&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;types/Employee&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
@@ -1665,7 +1665,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;所以我们需要 &lt;strong&gt;Function Wrapping&lt;/strong&gt; 来获取依赖并且提前通过 script tag 提前加载进来&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//AMD Wrapper&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//AMD Wrapper&lt;/span&gt;
 
 &lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;types&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Employee&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;//依赖&lt;/span&gt;
@@ -1684,7 +1684,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;当依赖模块非常多时，这种&lt;strong&gt;依赖前置&lt;/strong&gt;的写法会显得有点奇怪，所以 AMD 给了一个语法糖， &lt;strong&gt;simplified CommonJS wrapping&lt;/strong&gt;，借鉴了 CommonJS 的 require 就近风格，也更方便对 CommonJS 模块的兼容：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dependency1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;dependency1&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
         &lt;span class=&quot;nx&quot;&gt;dependency2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;dependency2&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
@@ -1694,7 +1694,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;The AMD loader will parse out the &lt;code class=&quot;highlighter-rouge&quot;&gt;require(&#39;&#39;)&lt;/code&gt; calls by using &lt;code class=&quot;highlighter-rouge&quot;&gt;Function.prototype.toString()&lt;/code&gt;, then internally convert the above define call into this:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;require&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;dependency1&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;dependency2&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;require&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;dependency1&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;dependency2&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dependency1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;dependency1&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
         &lt;span class=&quot;nx&quot;&gt;dependency2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;dependency2&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
@@ -1711,13 +1711,13 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;Modules/1.0:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 执行到此时，a.js 才同步下载并执行&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 执行到此时，a.js 才同步下载并执行&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;AMD: （使用 require 的语法糖时）&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;require&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)){&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;require&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)){&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// 在这里，a.js 已经下载并且执行好了&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// 使用 require() 并不是 AMD 的推荐写法&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 此处仅仅是取模块 a 的 exports&lt;/span&gt;
@@ -1733,7 +1733,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;AMD 推荐的风格并不使用&lt;code class=&quot;highlighter-rouge&quot;&gt;require&lt;/code&gt;，而是通过参数传入，破坏了&lt;strong&gt;依赖就近&lt;/strong&gt;：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// 提前申明了并初始化了所有模块&lt;/span&gt;
 
     &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//即便根本没用到模块 b，但 b 还是提前执行了。&lt;/span&gt;
@@ -1745,7 +1745,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;另外，require 2.0 也开始思考异步处理&lt;strong&gt;软依赖&lt;/strong&gt;（区别于一定需要的&lt;strong&gt;硬依赖&lt;/strong&gt;）的问题，提出了这样的方案：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 函数体内：&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 函数体内：&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;async&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;a&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
         &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
@@ -1784,7 +1784,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
   &lt;li&gt;这个 require 实际上是一个全局函数，用于加载模块，这里实际就是传入而已&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 
     &lt;span class=&quot;c1&quot;&gt;// 获取模块 a 的接口&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;./a&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -1802,7 +1802,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;但是你也可以使用 AMD 风格，或者使用 return 来进行模块暴露&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;hello&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;jquery&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;hello&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;jquery&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 
     &lt;span class=&quot;c1&quot;&gt;// 模块代码...&lt;/span&gt;
 
@@ -1832,7 +1832,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;看代码：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// AMD 默认推荐&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// AMD 默认推荐&lt;/span&gt;
 
 &lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;./a&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;./b&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// 依赖前置，提前执行&lt;/span&gt;
 
@@ -1844,7 +1844,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// CMD&lt;/span&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// CMD&lt;/span&gt;
 
 &lt;span class=&quot;nx&quot;&gt;define&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 
@@ -1880,7 +1880,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
   &lt;p&gt;世界那么大，我想去看看&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Hi all  &lt;br /&gt;
+&lt;p&gt;Hi all&lt;br /&gt;
 这里是鬼栈的离职信。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/in-post/post-c-u-ali-team.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
@@ -1893,7 +1893,7 @@ BAT 纷纷介入，行业进入了传说中的 BATX 格局：&lt;/p&gt;
 
 &lt;p&gt;8 月，感谢 &lt;a href=&quot;http://weibo.com/jayli&quot;&gt;@拔赤&lt;/a&gt; 的提携，同意了我转岗到航旅前端团队的申请，分在了老大亲自带队的 &lt;strong&gt;航旅事业群-无线业务部-无线技术-前端团队-前端三组&lt;/strong&gt;，从此开始了一名&lt;strong&gt;前端程序猿&lt;/strong&gt;的职业生涯。&lt;/p&gt;
 
-&lt;p&gt;我的第一个 mentor 是大家的”小师妹” @晴舞 姐，不过很可惜的是她居然早于我离职，回北邮任教了。我跟着她在 H5 酒店 的业务线上学习、厮杀，从一个连 git 都用不熟的小小鬼，变成了一个可以独立战斗的小鬼。  &lt;br /&gt;
+&lt;p&gt;我的第一个 mentor 是大家的”小师妹” @晴舞 姐，不过很可惜的是她居然早于我离职，回北邮任教了。我跟着她在 H5 酒店 的业务线上学习、厮杀，从一个连 git 都用不熟的小小鬼，变成了一个可以独立战斗的小鬼。&lt;br /&gt;
 在 Acting H5 酒店/团购 业务线时，也非常感谢 @骏隆 的指导和信任，算是我的大半个 mentor 了。&lt;/p&gt;
 
 &lt;p&gt;我的第二个 mentor 是人超 nice 的 @智峰 师傅，前手机腾讯网主管，负责团队 CSS 框架，很有生活哲学的一个人。我们一起拿下了 h5 红包等工作，不过很可惜的是没机会从师傅身上学更多的 CSS 了。&lt;/p&gt;
