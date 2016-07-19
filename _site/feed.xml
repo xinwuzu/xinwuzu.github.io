@@ -5,13 +5,15 @@
     <description>关于前端与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
     <link>http://xinwuzu.com/</link>
     <atom:link href="http://xinwuzu.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 16 Jul 2016 12:15:21 +0800</pubDate>
-    <lastBuildDate>Sat, 16 Jul 2016 12:15:21 +0800</lastBuildDate>
+    <pubDate>Sat, 16 Jul 2016 12:33:47 +0800</pubDate>
+    <lastBuildDate>Sat, 16 Jul 2016 12:33:47 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>九歌里的神奇世界</title>
-        <description>&lt;blockquote&gt;
+        <description>&lt;p&gt;诗经和楚辞，这是中国诗歌源头最伟大的两条河流。诗经的主要美学原则是乐而不淫，哀而不伤。楚辞则不然，它绚丽浪漫，令人目不暇接。诗人高兴时可以上天入地，悲伤时也可以呼天抢地。&lt;/p&gt;
+
+&lt;blockquote&gt;
   &lt;p&gt;这篇文章转载自&lt;a href=&quot;http://zhuanlan.zhihu.com/FrontendMagazine/20549104&quot;&gt;我在知乎专栏「前端外刊评论」上发表的文章&lt;/a&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -251,7 +253,7 @@ React     : 直接用 JS 就好啦 :)
         <link>http://xinwuzu.com/2016/07/14/jiuge/</link>
         <guid isPermaLink="true">http://xinwuzu.com/2016/07/14/jiuge/</guid>
         
-        <category>读后感</category>
+        <category>神奇</category>
         
         
       </item>

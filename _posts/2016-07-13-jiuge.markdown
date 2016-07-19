@@ -8,8 +8,10 @@ header-img: "img/post-bg-jiuge.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
-    - 读后感
+    - 神奇
 ---
+诗经和楚辞，这是中国诗歌源头最伟大的两条河流。诗经的主要美学原则是乐而不淫，哀而不伤。楚辞则不然，它绚丽浪漫，令人目不暇接。诗人高兴时可以上天入地，悲伤时也可以呼天抢地。
+
 
 > 这篇文章转载自[我在知乎专栏「前端外刊评论」上发表的文章](http://zhuanlan.zhihu.com/FrontendMagazine/20549104)。
 
