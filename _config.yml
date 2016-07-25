@@ -89,5 +89,8 @@ friends: [
     },{
         title: "瑞克周",
         href: "https://www.douban.com/people/alexzhou81/"
+    },{
+        title: "阮一峰",
+        href: "http://www.ruanyifeng.com/home.html"
     }
 ]
