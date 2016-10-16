@@ -3,15 +3,28 @@
   <channel>
     <title>xinwuzu.com</title>
     <description>关于前端与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
-    <link>http://xinwuzu.com/</link>
-    <atom:link href="http://xinwuzu.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 30 Jul 2016 17:03:44 +0800</pubDate>
-    <lastBuildDate>Sat, 30 Jul 2016 17:03:44 +0800</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 17 Oct 2016 00:14:49 +0800</pubDate>
+    <lastBuildDate>Mon, 17 Oct 2016 00:14:49 +0800</lastBuildDate>
+    <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>又过完了一个周末</title>
+        <description>&lt;p&gt;晚上是羽毛球，手臂酸疼的打不出来字了。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Oct 2016 20:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2016/10/16/%E4%BB%8A%E5%A4%A9/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/10/16/%E4%BB%8A%E5%A4%A9/</guid>
+        
+        <category>日记</category>
+        
+        
+      </item>
     
       <item>
         <title>Like sunday like rain</title>
-        <description>&lt;p&gt;用了两个晚上看完朋友提到的这部《like sunday like rain》，加上这篇小文几乎是整整一周的业余时间，完全不是我的节奏（也是最近加班太多％＞＿＜％）。一部很棒的人文片，诗意的中文翻译《如晴天，似雨天》已足以让人顿生好感。不管是诗意的意译“如晴天，似雨天”，还是味同嚼蜡的台版直译“像星期天像雨”，很难将影片的内容与它的名字直接联系起来。据说编剧想表达的仅仅是一种淡淡的忧伤，现在看来他得逞了。简单的情节和设定，舒缓的节奏，淡淡的忧愁，“静静地看完，然后得到治愈”。
+        <description>&lt;p&gt;　　用了两个晚上看完朋友提到的这部《like sunday like rain》，加上这篇小文几乎是整整一周的业余时间，完全不是我的节奏（也是最近加班太多％＞＿＜％）。一部很棒的人文片，诗意的中文翻译《如晴天，似雨天》已足以让人顿生好感。不管是诗意的意译“如晴天，似雨天”，还是味同嚼蜡的台版直译“像星期天像雨”，很难将影片的内容与它的名字直接联系起来。据说编剧想表达的仅仅是一种淡淡的忧伤，现在看来他得逞了。简单的情节和设定，舒缓的节奏，淡淡的忧愁，“静静地看完，然后得到治愈”。
 &lt;img src=&quot;http://7xqi68.com1.z0.glb.clouddn.com/likesun4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;然后，在豆瓣上翻了几篇影评：&lt;/p&gt;
@@ -33,14 +46,14 @@
 
 &lt;h3 id=&quot;section&quot;&gt;关于才华&lt;/h3&gt;
 
-&lt;p&gt;首先被小正太Reggie的才华甚至可以说是天才所感动。小小年纪，就至少同时在数学、音乐、语言方面展现出过人的天赋。数学课上他轻蔑地对老师说，&lt;code class=&quot;highlighter-rouge&quot;&gt;“Euler was pretty thorough. ”&lt;/code&gt;网友说，&lt;code class=&quot;highlighter-rouge&quot;&gt;“Reggie的话真是太精彩了！我恨不得都背下来。”&lt;/code&gt;才华横溢的他魅力四射。才华本身带来感动，即便虚构如动漫人物樱木花道那句狂妄的“我果然是个天才！”，抑或是《美丽心灵》中约翰纳什教授疯癫中的天才，依然令人动容不已。人们依靠才华进行创造而不是体力，人生没有才华的点缀和闪耀是非常遗憾的。最近工作变得有些吃力，心态也不怎么好，突然感觉自己好像什么也不会，有些迷失了。“不知从哪儿来的优越感”也不知到哪儿去了。没了灵感，不仅生活没了灵感，工作也没了灵感。做总体设计要是没了灵感，那就只有靠时间的惨淡经营了，自给自足无以为继。&lt;/p&gt;
+&lt;p&gt;　　首先被小正太Reggie的才华甚至可以说是天才所感动。小小年纪，就至少同时在数学、音乐、语言方面展现出过人的天赋。数学课上他轻蔑地对老师说，&lt;code class=&quot;highlighter-rouge&quot;&gt;“Euler was pretty thorough. ”&lt;/code&gt;网友说，&lt;code class=&quot;highlighter-rouge&quot;&gt;“Reggie的话真是太精彩了！我恨不得都背下来。”&lt;/code&gt;才华横溢的他魅力四射。才华本身带来感动，即便虚构如动漫人物樱木花道那句狂妄的“我果然是个天才！”，抑或是《美丽心灵》中约翰纳什教授疯癫中的天才，依然令人动容不已。人们依靠才华进行创造而不是体力，人生没有才华的点缀和闪耀是非常遗憾的。最近工作变得有些吃力，心态也不怎么好，突然感觉自己好像什么也不会，有些迷失了。“不知从哪儿来的优越感”也不知到哪儿去了。没了灵感，不仅生活没了灵感，工作也没了灵感。做总体设计要是没了灵感，那就只有靠时间的惨淡经营了，自给自足无以为继。&lt;/p&gt;
 
-&lt;p&gt;Reggie同时也是强大的，他明确地知道自己想要的是什么，应该怎么做，&lt;strong&gt;他不需要找到自我&lt;/strong&gt;。他的忧愁孤独，一个人的孤独，因为没人愿意真正进入他的世界。他主动理解别人，温柔地对待这个世界，同样也希望被温柔地对待。他只是期待这样一个人，能理解他能真正跟他对话。这时，Eleanor出现了。
+&lt;p&gt;　　Reggie同时也是强大的，他明确地知道自己想要的是什么，应该怎么做，&lt;strong&gt;他不需要找到自我&lt;/strong&gt;。他的忧愁孤独，一个人的孤独，因为没人愿意真正进入他的世界。他主动理解别人，温柔地对待这个世界，同样也希望被温柔地对待。他只是期待这样一个人，能理解他能真正跟他对话。这时，Eleanor出现了。
 &lt;img src=&quot;http://7xqi68.com1.z0.glb.clouddn.com/likesun1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;section-1&quot;&gt;关于音乐&lt;/h3&gt;
 
-&lt;p&gt;影片最大的亮点在于同名配乐，故事在这首曲子中开始和结束，情节和音乐配合得天衣无缝。旋律带来的干净、轻柔和淡淡的忧伤，也正是故事的底色。我是先遇到音乐的，在无限循环之后，循着音乐来看了电影。于我，与其讲音乐完美地渗透到故事之中，不如说情节漂亮地融入到音乐之中。图像帮助我更好的理解音乐：&lt;code class=&quot;highlighter-rouge&quot;&gt;抵挡不住大提琴的声音，大提琴的悲伤无法阻挡。&lt;/code&gt;美美的一首曲子，的确是美。对电影情节内涵和外延的理解是五花八门的，而相比之下，几乎所有人都从音乐中感受到了这种淡淡的忧愁，原来我们生来就懂得聆听音乐。
+&lt;p&gt;　　影片最大的亮点在于同名配乐，故事在这首曲子中开始和结束，情节和音乐配合得天衣无缝。旋律带来的干净、轻柔和淡淡的忧伤，也正是故事的底色。我是先遇到音乐的，在无限循环之后，循着音乐来看了电影。于我，与其讲音乐完美地渗透到故事之中，不如说情节漂亮地融入到音乐之中。图像帮助我更好的理解音乐：&lt;code class=&quot;highlighter-rouge&quot;&gt;抵挡不住大提琴的声音，大提琴的悲伤无法阻挡。&lt;/code&gt;美美的一首曲子，的确是美。对电影情节内涵和外延的理解是五花八门的，而相比之下，几乎所有人都从音乐中感受到了这种淡淡的忧愁，原来我们生来就懂得聆听音乐。
 &lt;img src=&quot;http://7xqi68.com1.z0.glb.clouddn.com/likesun2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;section-2&quot;&gt;关于爱情&lt;/h3&gt;
@@ -57,7 +70,7 @@
 
 &lt;p&gt;但我觉得那就是爱情，就像Reggie朗诵的这首诗：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Pillow&#39;d upon my fair love&#39;s ripening breast,
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Pillow'd upon my fair love's ripening breast,
 枕在爱人酥软的胸脯上，
 To feel for ever its soft fall and swell,
 永远感触那舒缓的升起和降落，
@@ -75,9 +88,9 @@ BY JOHN KEATS
 &lt;img src=&quot;http://7xqi68.com1.z0.glb.clouddn.com/likesun5.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 29 Jul 2016 20:00:00 +0800</pubDate>
-        <link>http://xinwuzu.com/2016/07/29/likerain/</link>
-        <guid isPermaLink="true">http://xinwuzu.com/2016/07/29/likerain/</guid>
+        <pubDate>Sat, 30 Jul 2016 20:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2016/07/30/likerain/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/07/30/likerain/</guid>
         
         <category>影评</category>
         

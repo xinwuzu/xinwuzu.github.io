@@ -1,0 +1,14 @@
+---
+layout:     post
+title:      "又过完了一个周末"
+subtitle:   ""
+date:       2016-10-16 12:00:00
+author:     "xinwuzu"
+header-img: "img/post-bg-likesunrain.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+    - 日记
+---
+
+晚上是羽毛球，手臂酸疼的打不出来字了。
