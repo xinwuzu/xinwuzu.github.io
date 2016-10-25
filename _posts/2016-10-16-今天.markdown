@@ -2,9 +2,9 @@
 layout:     post
 title:      "又过完了一个周末"
 subtitle:   ""
-date:       2016-10-16 12:00:00
+date:       2016-10-25 12:00:00
 author:     "xinwuzu"
-header-img: "img/post-bg-likesunrain.jpg"
+header-img: i"img/post-bg-likesunrain.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
@@ -14,3 +14,4 @@ tags:
 今天被神州十一号刷屏了，谁叫是火箭学校毕业的呢。
 我的问题的话就在于太散漫，推进和落地的事情总没个期限。
 我的问题是迟迟不动，生命只有900个月啊。
+孤独的生日。
