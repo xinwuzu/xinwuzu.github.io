@@ -4,7 +4,7 @@ title:      "2017年我的七个关键词"
 subtitle:   ""
 date:       2017-02-04 12:00:00
 author:     "xinwuzu"
-header-img: "img/post-bg-likesunrain.jpg"
+header-img: "img/post-bg-guanjianci.png"
 header-mask: 0.3
 catalog:    true
 tags:
