@@ -5,7 +5,7 @@ subtitle:   ""
 date:       2017-02-04 12:00:00
 author:     "xinwuzu"
 header-img: "img/post-bg-guanjianci2.png"
-header-mask: 0	
+header-mask: 0.1	
 catalog:    true
 tags:
     - 日记
