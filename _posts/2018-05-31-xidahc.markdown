@@ -4,8 +4,8 @@ title:      "抒情男高音"
 subtitle:   "接近西洋唱法的男高音，比较地道的纯意大利声色，哈哈哈"
 date:       2018-05-31 22:51:00
 author:     "xinwuzu"
-header-img: 
-header-mask: 0.08	
+header-img: "img/post-bg-likesunrain.jpg"
+header-mask: 0.3
 catalog:    true
 tags:
     - 日记
